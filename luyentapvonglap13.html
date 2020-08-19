@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập cấu trúc điều kiện 19</title>
+</head>
+<body>
+<script>
+    let amount = parseFloat(prompt('nhập số tiền vay'))
+    let rate = parseFloat(prompt('nhập tỷ lệ lãi hàng tháng theo %'))
+    let time = parseFloat(prompt('nhập số tháng vay'))
+    for (i=1;i<=time;i++){
+        interest = amount*rate/100
+        amount += interest
+    }
+    document.write('bạn phải trả '+ amount + 'VND')
+</script>
+</body>
+</html>

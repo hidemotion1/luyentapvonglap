@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập vòng lặp 8</title>
+</head>
+<body>
+<p>nhập khoảng bạn muốn đoán</p>
+<input type="number" id="min">
+<input type="number" id="max">
+<br>
+<button type="button" onclick="start()">bắt đầu</button>
+<script>
+    function start() {
+        let min = document.getElementById('min').value
+        let max = document.getElementById('max').value
+        let result = parseInt(( Math.random() * min * max) + min)
+        for (i = 0; i < 3; i++) {
+            let num = parseInt(prompt('nhập số bạn đoán'))
+            if (num == result) {
+                alert('chúc mừng bạn đã đoán đúng')
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
